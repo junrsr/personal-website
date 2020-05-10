@@ -39,7 +39,7 @@ body .text{
 }
 
 body .text img{
-    padding: 50px;
+    padding: 75px;
 }
 
 body .bottom-text{
@@ -47,6 +47,7 @@ body .bottom-text{
     width: 40%;
     display: inline-block;
     vertical-align: middle;
+    font-size: 120%;
 }
 
 body .introduction{
@@ -86,8 +87,9 @@ body .about-me li{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: .6s;;
+    margin-top: 50px;
 }
 
 .button:hover{
@@ -96,16 +98,26 @@ body .about-me li{
 }
 
 input{
-    padding: 2px 10px;
+    padding: 2px 10px;    
+    border-radius: 4px;
+    width: 70%;
+    color: #000;
+    border: 1px solid grey;
+    /* border: 2px solid red */
+}
+
+input::placeholder, textarea::placeholder{
+    color: #a6a6a6;
 }
 
 textarea{
     padding: 2px 10px;
-}
-
-#your_message{
-    text-align: left;
-    size: 100px;
+    border-radius: 4px;
+    width: 70%;
+    height: 275px;
+    color: #000;
+    border: 1px solid grey;
+    /* border: 2px solid red */
 }
 
 .header{
@@ -194,7 +206,6 @@ label{
 
 .social-menu ul{
     position: absolute;
-    top: 63%;
     left: -1%;
     display: flex;
     transform:translate(-50%, -5);
@@ -218,4 +229,20 @@ label{
 .social-menu ul li a:hover{
     transform: translate(0, -10px);
     transform: scale(1.1);
+}
+
+.professional-skills .text{
+    font-size: 120%;
+}
+
+
+
+/* ERROR MESSAGES */
+
+.name-error, .email-error, .message-error{
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: -16px;
+    font-weight: bold;
+    width: 535px;
 }
