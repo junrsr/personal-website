@@ -11,6 +11,7 @@
 
 body{ /*This is for the body tag in html*/
     background-color: #eaf6f6; /*this is for the background colour*/
+    overflow-x: hidden;
 }
 
 hr{
@@ -50,11 +51,20 @@ body .bottom-text{
     font-size: 120%;
 }
 
-body .introduction{
-    margin-right: 250px;
-    margin-left: 100px;
-    margin-top: 100px;
-    height: 80vh;
+.introduction{
+    margin-right: 450px;
+    margin-left: 150px;
+    margin-top: 120px;
+    height: 100vh;
+}
+
+.background-image{
+    position: absolute;
+    width: 130vw;
+    margin-left: -30%;
+    opacity: .5;
+    z-index: -1;
+    margin-top: -250px;
 }
 
 body .introduction .introduction-text{
@@ -88,7 +98,7 @@ body .about-me li{
     text-decoration: none;
     display: inline-block;
     border-radius: 4px;
-    transition: .6s;;
+    transition: .6s;
     margin-top: 50px;
 }
 
@@ -103,12 +113,13 @@ input{
     width: 70%;
     color: #000;
     border: 1px solid grey;
-    /* border: 2px solid red */
+    
 }
 
 input::placeholder, textarea::placeholder{
     color: #a6a6a6;
 }
+
 
 textarea{
     padding: 2px 10px;
@@ -117,7 +128,6 @@ textarea{
     height: 275px;
     color: #000;
     border: 1px solid grey;
-    /* border: 2px solid red */
 }
 
 .header{
@@ -151,6 +161,10 @@ label{
 .navigation{
     border-bottom: 1px solid #DFE2E2;
     border-width: 100%;
+    background-color: #eaf6f6;
+    width: 100vw;
+    margin-left: -8px;
+    margin-top: -8px;
 }
 
 .topnav {
@@ -169,7 +183,7 @@ label{
     font-size: 24px;
     vertical-align: middle;
     margin-top: 20px;
-    transition: .6s;;
+    transition: .6s;
 }
 
 .topnav img{
@@ -192,7 +206,7 @@ label{
 .project-section{
     height: 110vh;
     width: 99.244vw;
-    margin-left: -10px;;
+    margin-left: -10px;
     color: white;
 }
 
@@ -233,16 +247,4 @@ label{
 
 .professional-skills .text{
     font-size: 120%;
-}
-
-
-
-/* ERROR MESSAGES */
-
-.name-error, .email-error, .message-error{
-    font-size: 18px;
-    color: #ff0000;
-    margin-top: -16px;
-    font-weight: bold;
-    width: 535px;
 }
